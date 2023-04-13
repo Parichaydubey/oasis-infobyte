@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>landing page</title>
+  <style type="text/css">
+    *{padding: 0; margin:0; box-sizing: border-box;}
+      header{
+        width:100%;
+        height:100vh;
+        background: linear-gradient(rgba(0,0,0, 0.8),rgba(0, 0, 0, 0.2)), url('flow.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      nav{
+        width: 100%;
+        height:100px;
+        color: palegreen;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+.logo{
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+.menu a{ 
+ text-decoration: none;
+ color: white;
+ padding: 10px 20px;
+ font-size: 20px;
+ position: relative;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 0px 5px;
+}
+nav ul li a{
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 7px 8px;
+}
+nav ul li a:hover{
+  background-color: palevioletred;
+  transition: 0.5s ease;
+}
+.menu a:before{
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px indigo;
+ 
+}
+
+.menu a:hover:before{
+    width:90%;
+
+}
+.register a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  background: rgb(38, 101, 160);
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.register a:hover{
+     background: transparent;
+     border: 1px solid palevioletred;
+}
+.txt{
+  max-width: 650px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: black;
+}
+.txt a:hover{
+     background: transparent;
+     border: 1px solid orchid;
+}
+.txt span{
+
+  letter-spacing: 5px;
+  font-size: 2.5em;
+  
+}
+ 
+
+.txt h1{
+    
+  font-size: 3.5em;
+}
+.txt a{
+  text-decoration: none;
+  background: rgb(47, 106, 174);
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  
+  border-radius: 8px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.txt a:hover{
+     background: transparent;
+     border: 1px solid palevioletred;
+}
+.p{
+            text-align: justify;
+         }
+        .left{
+        width: 45%;
+        float: left; }
+        .right{
+        width: 45%;
+        float: right; }
+        
+ 
+  </style>
+</head>
+
+
+<body>
+  <header>
+<nav>
+  <div class="logo">
+    FLOWER
+  </div>
+
+  <div class="menu">
+    <nav>
+      <ul>
+    <li><a href=" ">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Variety</a></li>
+    </ul>
+    </nav>
+
+  </div>
+  <div class ="register">
+    <a href="#">different variety</a>
+
+  </div>
+</nav>
+<section class="txt">
+  <span>ENJOY</span>
+  <h1> FLOWER GALLERY</h1>
+  <br>
+  <a href="#">Place your Order</a>
+</section>
+  </header><br>
+  
+  <div class="p">
+    <div class="left">
+<img src="f1.jpg" style="height: 500px; width: 80%; padding-left: 10%;">
+<a href="#"><h3><center>White Flower</center></h3></a>      
+</div>
+    <div class="right">
+      <img src="f2.jpg" style="height: 500px; width: 80%; padding-right: 10%;">
+      <a href="#"><h3><center>Blue Rose</center></h3></a>
+    </div>
+</div>
+<div class="p">
+  <div class="left">
+<img src="f3.jpg" style="height: 500px; width: 80%; padding-left: 10%;">
+<a href="#"><h3><center>Rainbow Rose</center></h3></a>      
+</div>
+  <div class="right">
+    <img src="f4.jpg" style="height: 500px; width: 80%; padding-right: 10%;">
+    <a href="#"><h3><center>Purple Flower</center></h3></a>
+  </div>
+</div>
+</body>
+</html>
